@@ -2,14 +2,24 @@
 What do you want?
 A function which takes an input m and returns True if m can be partitioned as primes
 and False otherwise
+# Question:
 
-What is a partition?
 A positive integer m can be partitioned as primes if
 it can be written as p + q where p > 0, q > 0 and both p and q are prime numbers.
-
+Write a Python function primepartition(m) that takes an integer m as input and returns True if m can be partitioned
+as primes and False otherwise. (If m is not positive, your function should return False.)
 Example:
 7 = 2 + 5 So True.
 8 = 5 + 3 So True.
+Sample Input:
+>>> primepartition(7)
+True
+
+>>> primepartition(185)
+False
+
+>>> primepartition(3432)
+True
 """
 
 def seiveOfEratosthenes(n):
