@@ -1,4 +1,5 @@
 '''
+# Question:
 We have a list of annual rainfall recordings of cities. Each element in the list is of the form (c,r)
 where c is the city
 and r is the annual rainfall for a particular year.
