@@ -3,7 +3,7 @@ line = input()
 while line:
     (wsets, lsets, wgames, lgames) = (0, 0, 0, 0)
     (winner, loser, setscores) = line.strip().split(':', 2)
-
+    # print(winner, loser, setscores)
     sets = setscores.split(',')
     for set in sets:
         (winstr, losestr) = set.split('-')
