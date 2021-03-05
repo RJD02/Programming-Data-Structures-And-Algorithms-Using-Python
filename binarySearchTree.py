@@ -4,8 +4,8 @@ class Tree:
     def __init__(self, initval = None):
         self.val = initval
         if self.val:
-            self.right = Tree()
             self.left = Tree()
+            self.right = Tree()
         else:
             self.left = None
             self.right = None
