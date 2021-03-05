@@ -54,6 +54,11 @@ class Tree:
             return
         return
 
+    def isLeaf(self):
+        if self.right == None and self.left == None:
+            return True
+        return False
+
     def makeEmpty(self):
         self.val = None
         self.left = None
@@ -72,7 +77,7 @@ class Tree:
         if self.val < v:
             self.right.delete(v)
             return
-        if self.val < v:
+        if self.val > v:
             self.right.delete(v)
             return
 
