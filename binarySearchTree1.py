@@ -105,11 +105,14 @@ class Tree:
         else:
             return(self.left.inorder()+[self.value]+self.right.inorder())
 
+    def foo(self):
+        if self.isempty():
+            return 0
+        if self.isleaf():
+            return 1
+        return self.left.foo() + self.right.foo()
+
     # Display Tree as a string
     def __str__(self):
         return(str(self.inorder()))
-
-
-
-
 
