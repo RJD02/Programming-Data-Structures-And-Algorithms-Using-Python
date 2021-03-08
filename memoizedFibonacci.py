@@ -1,13 +1,13 @@
 def fib(n):
-    global dp
-    if dp[n] != -1:
-        return dp[n]
+    if fib_table[n]:
+        return fib_table[n]
     if n == 0 or n == 1:
-        return n
-    value = fib(n - 1) + fib(n - 2)
-    dp[n] = value
+        value = n
+    else:
+        value = fib(n - 1) + fib(n - 2)
+    fib_table[n] = value
     return value
 
 n = int(input())
-dp = [-1 for i in range(n + 1)]
+fib_table = [0 for i in range(n + 1)]
 print(fib(n))
