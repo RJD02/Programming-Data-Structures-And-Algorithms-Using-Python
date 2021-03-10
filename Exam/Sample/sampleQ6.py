@@ -7,6 +7,8 @@ A sublist of a list is a segment consisting of contiguous values, without a gap.
 """
 
 def sublist(l1, l2):
+    if len(l1) == 0:
+        return False
     count = 0
     for i in l1:
         if i != l2[count]:
